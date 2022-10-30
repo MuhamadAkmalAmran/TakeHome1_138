@@ -4,10 +4,14 @@
  */
 package ws.A.takehome1;
 
+import org.springframework.stereotype.Controller;
+
 /**
  *
  * @author akmal
  */
+
+@Controller
 public class myController {
     
 }
