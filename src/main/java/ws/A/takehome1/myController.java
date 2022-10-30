@@ -5,6 +5,7 @@
 package ws.A.takehome1;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,9 +23,14 @@ public class myController {
     public String Inputan
         (
             @RequestParam(value="Nama") String inputNama,
-            @RequestParam(value="Lokasi") String inputLokasi
+            @RequestParam(value="Lokasi") String inputLokasi,
+            Model input
         )
     {
+        input.addAttribute("Nama", inputNama);
+        input.addAttribute("Lokasi", inputLokasi);
+        
+        
         return "viewpage";
     }
 }
