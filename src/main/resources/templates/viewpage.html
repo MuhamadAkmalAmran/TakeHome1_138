@@ -12,8 +12,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
         <h1>INI VIEW PAGE</h1>
         <hr/>
-        <l th:text="${paket1}"></l>
+        <l th:text="${Nama}"></l>
         <br/><br/>
-        <l th:text="${paket2}"></l>
+        <l th:text="${Lokasi}"></l>
+        <br/><br/>
+        <img src="@{'getimage/'+${Gambar}}" />
     </body>
 </html>
