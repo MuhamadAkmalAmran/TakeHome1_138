@@ -8,14 +8,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>View Page Hiling</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+        </style>
     </head>
     <body>
         <h1>INI VIEW PAGE</h1>
-        <hr/>
-        Nama :<l th:text="${Nama1}"></l>
-        <br/><br/>
-        Lokasi :<l th:text="${Lokasi1}"></l>
-        <br/><br/>
-        <p>Gambar :<img th:src="${Gambar1}"/></p>
+            <hr/>
+            
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Lokasi</th>
+                <th>Gambar</th>
+            <tr/>
+            
+            <tr>
+                <td><p th:text="${Nama1}"></p></td>
+                <td><p th:text="${Lokasi1}"></p></td>
+                <td><img th:src="${Gambar1}" width="200" height="300"/></td>
+            </tr>
+        </table>
+        
     </body>
 </html>
