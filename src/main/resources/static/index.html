@@ -12,12 +12,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
         <h1>HILING</h1>
         <hr/>
-        <form action="takehome">
-            Nama : <input type="text" name="Nama"/>
+        <form action="/takehome" method="post" enctype="multipart/form-data">
+            Nama : <input type="text" name="Nama" required=""/>
             <br/><br/>
-            Lokasi : <input type="text" name="Lokasi"/>
+            Lokasi : <input type="text" name="Lokasi" required=""/>
             <br/><br/>
-            Gambar : <input type="file" name="Gambar"/>
+            Gambar : <input type="file" name="Gambar" accept="image/png, image/jpeg" required=""/>
             <br/><br/>
             <input type="submit" value="Clik"/>
         </form>
