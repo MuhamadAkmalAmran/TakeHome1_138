@@ -32,7 +32,7 @@ public class myController {
         {
             byte[] img  = inputGambar.getBytes();
             String base64Image = Base64.encodeBase64String(img);
-                    
+            String LinkImg = "data:image/png;base64,".concat(base64Image);
             return "view";
         }
 }
