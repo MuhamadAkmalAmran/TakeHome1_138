@@ -33,6 +33,9 @@ public class myController {
             byte[] img  = inputGambar.getBytes();
             String base64Image = Base64.encodeBase64String(img);
             String LinkImg = "data:image/png;base64,".concat(base64Image);
+            input.addAttribute("Nama1", inputNama);
+            input.addAttribute("Lokasi1", inputLokasi);
+            input.addAttribute("Gambar1", LinkImg);
             return "view";
         }
 }
